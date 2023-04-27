@@ -17,7 +17,8 @@ namespace FillSpheres
             this.radius = radius;
             throwCount = 0;
         }
-
+        public string GetColor() =>  String.Format("{0},{1},{2}",color.GetRed(), color.GetGreen(), color.GetBlue());
+        public float GetRadius() => radius;
         public int GetTimesThrown() => throwCount;
 
         public void Pop()
@@ -27,7 +28,7 @@ namespace FillSpheres
 
         public void Throw()
         {
-            if (radius>0f)
+            if (radius > 0f)
             {
                 throwCount++;
             }
