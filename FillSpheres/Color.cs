@@ -32,7 +32,7 @@ namespace FillSpheres
         public byte GetGreen() => green;
         public byte GetBlue() => blue;
         public byte GetAlpha() => alpha;
-        public byte GetGrey() => (red+green+blue)/3;
+        public byte GetGrey() => (byte)((red+green+blue)/3);
 
 
         public void SetRed(byte red)
