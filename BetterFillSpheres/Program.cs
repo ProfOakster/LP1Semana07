@@ -6,6 +6,7 @@ namespace BetterFillSpheres
     {
         static void Main(string[] args)
         {
+            Color red = new Color(255, 0, 0);
             Color purple = new Color(200, 0, 200);
             Color orange = new Color(200, 200, 0);
             Color yellow = new Color(0, 200, 200);
@@ -25,6 +26,10 @@ namespace BetterFillSpheres
             Console.WriteLine("{0};{1};{2}", ball1.Color, ball1.Radius, ball1.ThrowCount);
             Console.WriteLine("{0};{1};{2}", ball2.Color, ball2.Radius, ball2.ThrowCount);
             Console.WriteLine("{0};{1};{2}", ball3.Color, ball3.Radius, ball3.ThrowCount);
+
+            Console.WriteLine(purple.Name);
+            Console.WriteLine(red.Name);
+
         }
     }
 }
